@@ -12,3 +12,17 @@ Si se acerca la fecha de finalización, de un plazo establecido con anterioridad
 
 #Arquitectura del proyecto:
  
+ 
+#Declaración de IA:
+
+La revisión y estructuración del proyecto se realizó con la ayuda de claude, en primera instancia se utilizó para la revisión de la arquitectura del script, optimizando los módulos planteados por el usuario y su contenido. A su vez, luego de finalizado el TPI se utilizó para auditar el mismo, buscando inconsistencias y errores dentro del mismo.
+
+#Errores observados por claude:
+
+·Error 1 []
+·Error 2 []
+·Error 3 []
+
+#Observaciones del equipo humano sobre los informes del asistente:
+
+
