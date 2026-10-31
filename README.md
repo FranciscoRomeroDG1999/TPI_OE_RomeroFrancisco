@@ -29,23 +29,33 @@ TPI_OE_RomeroFrancisco/
 └── README.md
  
 
-## Librerías:
+# Librerías:
 
 
-csv# Leer y escribir los archivos de estudiantes, cursos, inscripciones y reportes.datetime# Convertir las fechas (strptime) y compararlas con la fecha actual.smtplib# Conectarse al servidor de correo y enviar los avisos.email.message# Armar el correo (asunto, destinatario, cuerpo) con 
-EmailMessage.os# Verificar que existan los archivos y carpetas antes de usarlos.
+## csv
+Leer y escribir los archivos de estudiantes, cursos, inscripciones y reportes.
+## datetime
+Convertir las fechas (strptime) y compararlas con la fecha actual.
+## smtplib
+Conectarse al servidor de correo y enviar los avisos.
+## email.message
+Armar el correo (asunto, destinatario, cuerpo) con 
+EmailMessage.
+## os
+Verificar que existan los archivos y carpetas antes de usarlos.
+
  
 ## Declaración de IA:
 
 La revisión y estructuración del proyecto se realizó con la ayuda de claude, en primera instancia se utilizó para la revisión de la arquitectura del script, optimizando los módulos planteados por el usuario y su contenido. A su vez, luego de finalizado el TPI se utilizó para auditar el mismo, buscando inconsistencias y errores dentro del mismo.
 
-#Errores observados por claude:
+## Errores observados por claude:
 
 ·Errores en los flujos establecidos en el modelado del proceso del negocio (mal uso de compuerta exclusiva) []
 ·Errores al pactar los módulos iniciales del script, eliminación de ‘god functions’ []
 ·Mejoras en la segmentación del organigrama propuesto en anteriores entregas []
 
-#Observaciones del equipo humano sobre los informes del asistente:
+## Observaciones del equipo humano sobre los informes del asistente:
 
 El asistente es una gran herramienta, pero noté que si no le marcaba las directivas claras el mismo comienza a proponer o directamente incluir herramientas que no le pedí y que no son necesarias para llevar a cabo este proyecto. 
 
