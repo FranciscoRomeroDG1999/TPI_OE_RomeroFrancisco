@@ -93,3 +93,7 @@ Estructura utilizada para promptear y corregir esto:
 // SALIDA: salida esperada generada.
 // TECNOLOGÍA: tecnologías a utilizar para llevar a cabo el proyecto (más utilizado para suministrar mayor contexto).
 ```
+
+## Revisión de Pull Requests
+
+La revisión de los Pull Requests fue realizada por el propio autor, por tratarse de un trabajo individual. Los comentarios, observaciones y correcciones quedan documentados en cada PR.
