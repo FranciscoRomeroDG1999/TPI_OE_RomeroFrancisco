@@ -6,15 +6,33 @@
 
 ## Descripción del sistema:
 
-Sistema de automatización de alertas, desarrollado con Python. El sistema recibe como entrada un archivo CSV con información, la procesa y en base a la lógica del programa realiza una acción.
+```
+Script de alertas automáticas desarrollado en Python para el área de capacitaciones de
+**Phronencial S.R.L.**. 
 
-Si se acerca la fecha de finalización, de un plazo establecido con anterioridad para el alumno dentro del campus, se envía una notificación vía correo electrónico al alumno y al área de administración. Las alertas se envían 7 días antes del vencimiento del plazo y 1 día antes del mismo.
+Los cursos se habilitan a cada alumno por un plazo fijo, definido al momento de la compra.
+Hoy no existe un registro ni un aviso automático sobre esos vencimientos. Por eso quedan
+alumnos con el plazo vencido dentro del campus, y los alumnos consultan a la administración
+cuánto tiempo les queda.
 
-## Posible arquitectura del proyecto:
+El script toma como entrada archivos CSV con los datos de estudiantes, cursos e inscripciones,
+calcula los días que le quedan a cada habilitación y actúa según el resultado:
+
+- Reporte de vencidos (HU1): genera un CSV con los alumnos cuyo plazo ya terminó, para que
+  la administración gestione las bajas.
+- Avisos a alumnos (HU2): envía un correo 7 días y 1 día antes del vencimiento del curso.
+- Aviso a administración (HU3): envía ese reporte por correo al área de administración
+  en cuanto está listo.
+
+La persistencia de datos se resuelve con archivos CSV y sin dependencias externas. Es una
+herramienta puntual de apoyo a la administración, pensada para resolver una necesidad concreta
+con una solución simple.
+
+```
 
 ## Posible arquitectura del proyecto
 
-```text
+```
 TPI_OE_RomeroFrancisco/
 ├── main.py                 # Menú principal y punto de entrada
 ├── config.py               # Parámetros: días de aviso, correo de administración, rutas
