@@ -1,4 +1,4 @@
-# TPI_OE_RomeroFrancisco
+﻿# TPI_OE_RomeroFrancisco
 
 # Documento informativo sobre el Trabajo Práctico Integrador de la materia Organización Empresarial.
 
@@ -10,7 +10,23 @@ Sistema de automatización de alertas, desarrollado con Python. El sistema recib
 
 Si se acerca la fecha de finalización, de un plazo establecido con anterioridad para el alumno dentro del campus, se envía una notificación vía correo electrónico al alumno y al área de administración. Las alertas se envían 7 días antes del vencimiento del plazo y 1 día antes del mismo.
 
-#Arquitectura del proyecto:
+#Posible arquitectura del proyecto:
+
+TPI_OE_RomeroFrancisco/
+├── main.py                 # Menú principal y punto de entrada
+├── config.py               # Parámetros: días de aviso, correo de administración, rutas
+├── modulos/
+│   ├── datos.py            # Lectura, escritura y validación de CSV
+│   ├── fechas.py           # Cálculo de días restantes y vencimientos
+│   ├── reporte.py          # HU1: genera el reporte de cursos vencidos
+│   ├── notificaciones.py   # HU2 y HU3: envío de correos
+│   └── estadisticas.py     # Backlog: consultas para el equipo docente
+├── data/
+│   ├── estudiantes.csv
+│   ├── cursos.csv
+│   └── inscripciones.csv
+├── reportes/               # Reportes generados (vencidos_AAAA-MM-DD.csv)
+└── README.md
  
  
 #Declaración de IA:
