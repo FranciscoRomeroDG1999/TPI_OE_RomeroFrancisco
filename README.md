@@ -12,6 +12,9 @@ Si se acerca la fecha de finalización, de un plazo establecido con anterioridad
 
 ## Posible arquitectura del proyecto:
 
+## Posible arquitectura del proyecto
+
+```text
 TPI_OE_RomeroFrancisco/
 ├── main.py                 # Menú principal y punto de entrada
 ├── config.py               # Parámetros: días de aviso, correo de administración, rutas
@@ -27,6 +30,7 @@ TPI_OE_RomeroFrancisco/
 │   └── inscripciones.csv
 ├── reportes/               # Reportes generados (vencidos_AAAA-MM-DD.csv)
 └── README.md
+```
  
 
 # Librerías:
@@ -51,21 +55,23 @@ La revisión y estructuración del proyecto se realizó con la ayuda de claude, 
 
 ## Errores observados por claude:
 
+```
 ·Errores en los flujos establecidos en el modelado del proceso del negocio (mal uso de compuerta exclusiva) []
 ·Errores al pactar los módulos iniciales del script, eliminación de ‘god functions’ []
 ·Mejoras en la segmentación del organigrama propuesto en anteriores entregas []
+```
 
 ## Observaciones del equipo humano sobre los informes del asistente:
 
 El asistente es una gran herramienta, pero noté que si no le marcaba las directivas claras el mismo comienza a proponer o directamente incluir herramientas que no le pedí y que no son necesarias para llevar a cabo este proyecto. 
 
-Estructura utilizada para promptear y corregir esto
+Estructura utilizada para promptear y corregir esto:
 
+```
 // ROL: rol del asistente en la tarea
 // CONTEXTO: información suministrada para llevar a cabo la tarea
 // INSTRUCCIONES: tarea a realizar por parte del asistente.
 // RESTRICCIONES: lo que no puede hacer bajo ningún punto de vista.
 // SALIDA: salida esperada generada.
 // TECNOLOGÍA: tecnologías a utilizar para llevar a cabo el proyecto (más utilizado para suministrar mayor contexto).
-
-
+```
